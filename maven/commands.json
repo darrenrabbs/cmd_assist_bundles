@@ -1,0 +1,20 @@
+{
+    "Maven": {
+      "Build": {
+        "Clean and Install": "mvn clean install",
+        "Package Project": "mvn package"
+      },
+      "Testing": {
+        "Run Tests": "mvn test",
+        "Test Report": "mvn surefire-report"
+      },
+      "Dependency Management": {
+        "Update Dependencies": "mvn versions:display-dependency-updates",
+        "List Dependencies": "mvn dependency:tree"
+      },
+      "Project Info": {
+        "Show Project Info": "mvn help:effective-pom",
+        "Show Goals": "mvn help:all-profiles"
+      }
+    }
+  }

@@ -1,0 +1,62 @@
+{
+    "argocd": {
+      "app": {
+        "list": "argocd app list",
+        "create": "argocd app create <app-name> --repo <repo-url> --path <path> --dest-server <server> --dest-namespace <namespace>",
+        "delete": "argocd app delete <app-name>",
+        "sync": "argocd app sync <app-name>",
+        "rollback": "argocd app rollback <app-name> --revision <revision>",
+        "status": "argocd app status <app-name>",
+        "set": {
+          "sync_policy": "argocd app set <app-name> --sync-policy <policy>",
+          "health_check": "argocd app set <app-name> --health-check <check-type>",
+          "sync_windows": "argocd app set <app-name> --sync-windows <sync-windows>"
+        }
+      },
+      "cluster": {
+        "list": "argocd cluster list",
+        "add": "argocd cluster add <cluster-name> --name <name>",
+        "delete": "argocd cluster delete <cluster-name>",
+        "get": "argocd cluster get <cluster-name>"
+      },
+      "repo": {
+        "list": "argocd repo list",
+        "add": "argocd repo add <repo-url> --username <username> --password <password>",
+        "delete": "argocd repo delete <repo-url>",
+        "get": "argocd repo get <repo-url>"
+      },
+      "user": {
+        "list": "argocd account list",
+        "create": "argocd account create <username> --password <password>",
+        "delete": "argocd account delete <username>",
+        "update": "argocd account update <username> --password <new-password>"
+      },
+      "context": {
+        "set": "argocd context <context-name>",
+        "list": "argocd context list"
+      },
+      "config": {
+        "get": "argocd cluster get-config",
+        "set": "argocd cluster set-config --server <server> --username <username> --password <password>"
+      },
+      "server": {
+        "status": "argocd server status",
+        "login": "argocd login <server> --username <username> --password <password>"
+      },
+      "advanced": {
+        "export": "argocd app export <app-name> --output <file>",
+        "import": "argocd app import <file>",
+        "audit": "argocd audit list",
+        "sync_window": "argocd app set <app-name> --sync-windows <sync-window>"
+      },
+      "use_cases": {
+        "deploy_app": "argocd app create <app-name> --repo <repo-url> --path <path> --dest-server <server> --dest-namespace <namespace> && argocd app sync <app-name>",
+        "update_app": "argocd app set <app-name> --sync-policy <policy> && argocd app sync <app-name>",
+        "delete_app": "argocd app delete <app-name>",
+        "list_clusters": "argocd cluster list",
+        "add_repo": "argocd repo add <repo-url> --username <username> --password <password>",
+        "list_repos": "argocd repo list",
+        "login_server": "argocd login <server> --username <username> --password <password>"
+      }
+    }
+  }

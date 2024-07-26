@@ -1,0 +1,20 @@
+{
+    "Gradle": {
+      "Build": {
+        "Build Project": "gradle build",
+        "Clean Build": "gradle clean build"
+      },
+      "Testing": {
+        "Run Tests": "gradle test",
+        "Test Report": "gradle test --info"
+      },
+      "Dependency Management": {
+        "List Dependencies": "gradle dependencies",
+        "Update Dependencies": "gradle dependencyUpdates"
+      },
+      "Tasks": {
+        "List Tasks": "gradle tasks",
+        "Run Specific Task": "gradle <task-name>"
+      }
+    }
+  }

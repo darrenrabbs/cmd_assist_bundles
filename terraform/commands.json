@@ -1,0 +1,29 @@
+{
+    "Terraform": {
+      "Setup": {
+        "Initialize": "terraform init",
+        "Validate": "terraform validate"
+      },
+      "Plan": {
+        "Plan Changes": "terraform plan",
+        "Show Plan": "terraform show plan"
+      },
+      "Apply": {
+        "Apply Changes": "terraform apply",
+        "Apply with Auto-Approve": "terraform apply -auto-approve"
+      },
+      "Destroy": {
+        "Destroy Infrastructure": "terraform destroy",
+        "Destroy with Auto-Approve": "terraform destroy -auto-approve"
+      },
+      "State Management": {
+        "List Resources": "terraform state list",
+        "Show Resource": "terraform state show <resource>",
+        "Move Resource": "terraform state mv <source> <destination>"
+      },
+      "Modules": {
+        "Create Module": "terraform module new <module-name>",
+        "Install Module": "terraform module install <module-name>"
+      }
+    }
+  }

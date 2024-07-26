@@ -1,0 +1,12 @@
+{
+    "SED": {
+      "Text Substitution": {
+        "Substitute Text": "sed 's/old/new/g' <file>",
+        "Delete Lines": "sed '/pattern/d' <file>"
+      },
+      "In-place Editing": {
+        "Edit File In-Place": "sed -i 's/old/new/g' <file>",
+        "Backup Before Editing": "sed -i.bak 's/old/new/g' <file>"
+      }
+    }
+  }

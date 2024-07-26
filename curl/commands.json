@@ -1,0 +1,22 @@
+{
+    "Curl Commands": {
+      "Basic Requests": {
+        "GET request": "curl -X GET <url>",
+        "POST request": "curl -X POST <url> -d '<data>'",
+        "PUT request": "curl -X PUT <url> -d '<data>'",
+        "DELETE request": "curl -X DELETE <url>"
+      },
+      "Headers": {
+        "Add header": "curl -H '<header>: <value>' <url>",
+        "Show headers": "curl -I <url>"
+      },
+      "Authentication": {
+        "Basic auth": "curl -u <user>:<password> <url>",
+        "Bearer token": "curl -H 'Authorization: Bearer <token>' <url>"
+      },
+      "Output": {
+        "Save to file": "curl <url> -o <file>",
+        "Show progress": "curl <url> -#"
+      }
+    }
+  }

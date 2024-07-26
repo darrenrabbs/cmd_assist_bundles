@@ -1,0 +1,13 @@
+{
+    "Telnet Commands": {
+      "Connect": {
+        "Connect to host": "telnet <host> <port>"
+      },
+      "Session Management": {
+        "Close session": "Ctrl + ] and then type 'quit'"
+      },
+      "Testing": {
+        "Test port": "telnet <host> <port>"
+      }
+    }
+  }

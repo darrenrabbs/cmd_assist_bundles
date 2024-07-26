@@ -1,0 +1,52 @@
+{
+    "bazel": {
+      "build": {
+        "build_target": "bazel build //path/to:target",
+        "build_with_config": "bazel build //path/to:target --config=<config>",
+        "build_with_flags": "bazel build //path/to:target --<flag>=<value>"
+      },
+      "test": {
+        "run_tests": "bazel test //path/to:target",
+        "run_tests_with_flags": "bazel test //path/to:target --<flag>=<value>",
+        "run_tests_with_config": "bazel test //path/to:target --config=<config>"
+      },
+      "clean": {
+        "clean_all": "bazel clean",
+        "clean_output": "bazel clean --expunge",
+        "clean_specific_target": "bazel clean --target=<target>"
+      },
+      "info": {
+        "system_info": "bazel info",
+        "build_info": "bazel info build",
+        "server_info": "bazel info server"
+      },
+      "query": {
+        "list_targets": "bazel query //path/to:target",
+        "list_all_targets": "bazel query //...",
+        "target_dependencies": "bazel query 'deps(//path/to:target)'",
+        "target_ancestors": "bazel query 'kind('cc_library', //...)'"
+      },
+      "run": {
+        "run_target": "bazel run //path/to:target",
+        "run_with_flags": "bazel run //path/to:target --<flag>=<value>"
+      },
+      "build_rules": {
+        "list_rules": "bazel query 'buildable()'",
+        "query_rule": "bazel query 'kind(<rule-type>, //path/to:target)'"
+      },
+      "advanced": {
+        "build_with_profile": "bazel build //path/to:target --profile=<profile>",
+        "build_with_remote_cache": "bazel build //path/to:target --remote_cache=<cache-url>",
+        "test_coverage": "bazel coverage //path/to:target"
+      },
+      "use_cases": {
+        "build_all": "bazel build //...",
+        "test_all": "bazel test //...",
+        "clean_all": "bazel clean",
+        "build_and_test": "bazel build //path/to:target && bazel test //path/to:target",
+        "build_and_run": "bazel build //path/to:target && bazel run //path/to:target",
+        "fetch_deps": "bazel fetch //path/to:target",
+        "query_deps": "bazel query 'deps(//path/to:target)'"
+      }
+    }
+  }

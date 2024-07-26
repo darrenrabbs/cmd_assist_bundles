@@ -1,0 +1,52 @@
+{
+    "docker": {
+      "container_management": {
+        "list_containers": "docker ps",
+        "list_all_containers": "docker ps -a",
+        "start_container": "docker start <container-id>",
+        "stop_container": "docker stop <container-id>",
+        "restart_container": "docker restart <container-id>",
+        "remove_container": "docker rm <container-id>",
+        "attach_to_container": "docker attach <container-id>",
+        "exec_command_in_container": "docker exec -it <container-id> <command>",
+        "logs": "docker logs <container-id>",
+        "inspect_container": "docker inspect <container-id>"
+      },
+      "image_management": {
+        "list_images": "docker images",
+        "pull_image": "docker pull <image-name>:<tag>",
+        "build_image": "docker build -t <image-name>:<tag> <path-to-Dockerfile>",
+        "tag_image": "docker tag <image-id> <repository>:<tag>",
+        "remove_image": "docker rmi <image-id>",
+        "inspect_image": "docker inspect <image-id>"
+      },
+      "network_management": {
+        "list_networks": "docker network ls",
+        "inspect_network": "docker network inspect <network-id>",
+        "create_network": "docker network create <network-name>",
+        "remove_network": "docker network rm <network-id>"
+      },
+      "volume_management": {
+        "list_volumes": "docker volume ls",
+        "create_volume": "docker volume create <volume-name>",
+        "inspect_volume": "docker volume inspect <volume-name>",
+        "remove_volume": "docker volume rm <volume-name>"
+      },
+      "docker_compose": {
+        "start_services": "docker-compose up -d",
+        "stop_services": "docker-compose down",
+        "list_services": "docker-compose ps",
+        "build_services": "docker-compose build",
+        "logs_services": "docker-compose logs",
+        "execute_command_in_service": "docker-compose exec <service> <command>"
+      },
+      "use_cases": {
+        "run_container_with_ports_and_volumes": "docker run -d -p <host-port>:<container-port> -v <host-directory>:<container-directory> --name <container-name> <image-name>:<tag>",
+        "connect_and_run_command_in_container": "docker run -it --rm <image-name>:<tag> <command>",
+        "inspect_container_logs": "docker logs <container-id>",
+        "debug_container": "docker exec -it <container-id> /bin/bash",
+        "run_with_environment_variables": "docker run -d -e VAR_NAME=value --name <container-name> <image-name>:<tag>",
+        "list_running_processes_in_container": "docker exec -it <container-id> ps aux"
+      }
+    }
+  }

@@ -1,0 +1,52 @@
+{
+    "Windows": {
+      "File Management": {
+        "List Files in Directory": "dir",
+        "List Files in Directory (Detailed)": "dir /q",
+        "Find Files by Name": "dir /s /b <filename>",
+        "Find Files by Extension": "dir /s /b *.ext",
+        "Copy File": "copy <source> <destination>",
+        "Move File": "move <source> <destination>",
+        "Delete File": "del <file>",
+        "Delete Directory Recursively": "rd /s /q <directory>",
+        "Show Disk Usage": "fsutil volume diskfree C:",
+        "Show Disk Space": "wmic logicaldisk get size,freespace,caption"
+      },
+      "Text Searching and Manipulation": {
+        "Find Text in Files": "findstr /s /i /p <pattern> <file>",
+        "Find and Replace Text": "powershell -Command \"(Get-Content <file>) -replace '<old>', '<new>' | Set-Content <file>\"",
+        "Count Occurrences of a Pattern": "findstr /r /c:\"<pattern>\" <file> | find /c /v \"\"",
+        "Show Unique Lines": "powershell -Command \"Get-Content <file> | Sort-Object -Unique\"",
+        "Sort File": "powershell -Command \"Get-Content <file> | Sort-Object\"",
+        "Display First N Lines of a File": "powershell -Command \"Get-Content <file> | Select-Object -First <number>\"",
+        "Display Last N Lines of a File": "powershell -Command \"Get-Content <file> | Select-Object -Last <number>\"",
+        "View File in Pages": "more <file>"
+      },
+      "System Information": {
+        "Show System Info": "systeminfo",
+        "Show IP Configuration": "ipconfig",
+        "Show Network Statistics": "netstat",
+        "Show Running Processes": "tasklist",
+        "Show Memory Usage": "wmic os get freephysicalmemory,TotalVisibleMemorySize",
+        "Show Active Network Connections": "netstat -a"
+      },
+      "Networking": {
+        "Ping a Host": "ping <host>",
+        "Trace Route to a Host": "tracert <host>",
+        "Check Open Ports": "netstat -an | findstr <port>",
+        "Download File from URL": "powershell -Command \"Invoke-WebRequest -Uri <url> -OutFile <file>\"",
+        "Fetch Headers from URL": "powershell -Command \"Invoke-WebRequest -Uri <url> -Method Head\""
+      },
+      "Archiving and Compression": {
+        "Create a Zip Archive": "powershell -Command \"Compress-Archive -Path <files> -DestinationPath <archive.zip>\"",
+        "Extract a Zip Archive": "powershell -Command \"Expand-Archive -Path <archive.zip> -DestinationPath <directory>\""
+      },
+      "PowerShell Specific": {
+        "List Installed Programs": "Get-WmiObject -Class Win32_Product",
+        "Get Disk Space on a Drive": "Get-PSDrive -PSProvider FileSystem",
+        "List Services": "Get-Service",
+        "Start a Service": "Start-Service <service>",
+        "Stop a Service": "Stop-Service <service>"
+      }
+    }
+  }

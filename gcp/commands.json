@@ -1,0 +1,44 @@
+{
+  "GCP Commands": {
+    "Compute Engine": {
+      "List instances": "gcloud compute instances list",
+      "Create instance": "gcloud compute instances create <instance-name> --image-family=<image-family> --image-project=<image-project>",
+      "Start instance": "gcloud compute instances start <instance-name>",
+      "Stop instance": "gcloud compute instances stop <instance-name>",
+      "Delete instance": "gcloud compute instances delete <instance-name>"
+    },
+    "Cloud Storage": {
+      "List buckets": "gsutil ls",
+      "Create bucket": "gsutil mb gs://<bucket-name>",
+      "Delete bucket": "gsutil rb gs://<bucket-name>",
+      "Upload file": "gsutil cp <file> gs://<bucket>/",
+      "Download file": "gsutil cp gs://<bucket>/<file> <path>"
+    },
+    "IAM": {
+      "List roles": "gcloud iam roles list",
+      "Create role": "gcloud iam roles create <role-id> --file <role-definition.yaml>",
+      "Delete role": "gcloud iam roles delete <role-id>"
+    },
+    "Cloud Functions": {
+      "List functions": "gcloud functions list",
+      "Deploy function": "gcloud functions deploy <function-name> --runtime <runtime> --trigger-http --entry-point <entry-point>",
+      "Delete function": "gcloud functions delete <function-name>"
+    },
+    "Cloud Pub/Sub": {
+      "List topics": "gcloud pubsub topics list",
+      "Create topic": "gcloud pubsub topics create <topic-name>",
+      "Delete topic": "gcloud pubsub topics delete <topic-name>",
+      "List subscriptions": "gcloud pubsub subscriptions list",
+      "Create subscription": "gcloud pubsub subscriptions create <subscription-name> --topic <topic-name>",
+      "Delete subscription": "gcloud pubsub subscriptions delete <subscription-name>"
+    },
+    "BigQuery": {
+      "List datasets": "bq ls",
+      "Create dataset": "bq mk <dataset-name>",
+      "Delete dataset": "bq rm -r -d <dataset-name>",
+      "Run query": "bq query --use_legacy_sql=false '<SQL-query>'",
+      "Load data": "bq load --source_format=<format> <dataset>.<table> <source-file>",
+      "Export data": "bq extract --destination_format=<format> <dataset>.<table> <destination-uri>"
+    }
+  }
+}

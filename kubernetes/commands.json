@@ -1,0 +1,19 @@
+{
+    "Kubernetes Commands": {
+      "Basic Operations": {
+        "Get nodes": "kubectl get nodes",
+        "Get pods": "kubectl get pods",
+        "Describe node": "kubectl describe node <node-name>",
+        "Describe pod": "kubectl describe pod <pod-name>"
+      },
+      "Deployments": {
+        "Create deployment": "kubectl create deployment <name> --image=<image>",
+        "Scale deployment": "kubectl scale deployment <name> --replicas=<number>",
+        "Delete deployment": "kubectl delete deployment <name>"
+      },
+      "Services": {
+        "Expose service": "kubectl expose deployment <name> --port=<port> --target-port=<target-port>",
+        "Delete service": "kubectl delete svc <service-name>"
+      }
+    }
+  }

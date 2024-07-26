@@ -1,0 +1,39 @@
+{
+  "AWS Commands": {
+    "EC2": {
+      "List instances": "aws ec2 describe-instances",
+      "Start instance": "aws ec2 start-instances --instance-ids <id>",
+      "Stop instance": "aws ec2 stop-instances --instance-ids <id>",
+      "Terminate instance": "aws ec2 terminate-instances --instance-ids <id>",
+      "Describe instance": "aws ec2 describe-instances --instance-ids <id>"
+    },
+    "S3": {
+      "List buckets": "aws s3 ls",
+      "Create bucket": "aws s3 mb s3://<bucket-name>",
+      "Delete bucket": "aws s3 rb s3://<bucket-name>",
+      "Upload file": "aws s3 cp <file> s3://<bucket>/",
+      "Download file": "aws s3 cp s3://<bucket>/<file> <path>"
+    },
+    "IAM": {
+      "List users": "aws iam list-users",
+      "Create user": "aws iam create-user --user-name <user-name>",
+      "Delete user": "aws iam delete-user --user-name <user-name>",
+      "Attach policy": "aws iam attach-user-policy --user-name <user-name> --policy-arn <policy-arn>"
+    },
+    "Lambda": {
+      "List functions": "aws lambda list-functions",
+      "Invoke function": "aws lambda invoke --function-name <function-name> <output-file>",
+      "Update function code": "aws lambda update-function-code --function-name <function-name> --zip-file fileb://<file.zip>"
+    },
+    "CloudFormation": {
+      "List stacks": "aws cloudformation list-stacks",
+      "Create stack": "aws cloudformation create-stack --stack-name <stack-name> --template-body file://<template-file>",
+      "Delete stack": "aws cloudformation delete-stack --stack-name <stack-name>"
+    },
+    "RDS": {
+      "List instances": "aws rds describe-db-instances",
+      "Create instance": "aws rds create-db-instance --db-instance-identifier <id> --db-instance-class <class> --engine <engine>",
+      "Delete instance": "aws rds delete-db-instance --db-instance-identifier <id>"
+    }
+  }
+}
