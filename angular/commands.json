@@ -1,12 +1,12 @@
 {
-    "Angular Commands": {
-      "Basic Operations": {
+    "angular": {
+      "basic": {
         "Create new project": "ng new <project-name>",
         "Serve project": "ng serve",
         "Build project": "ng build",
         "Run tests": "ng test"
       },
-      "Generating Components": {
+      "components": {
         "Generate component": "ng generate component <component-name>",
         "Generate service": "ng generate service <service-name>"
       }
