@@ -1,0 +1,39 @@
+{
+    "helm": {
+      "chart_management": {
+        "search_charts": "helm search repo <chart-name>",
+        "inspect_chart": "helm show chart <chart-name>",
+        "list_charts": "helm list --all-namespaces",
+        "get_chart_values": "helm get values <release-name>",
+        "template_chart": "helm template <release-name> <chart> --values <values-file>"
+      },
+      "installation_management": {
+        "install_chart": "helm install <release-name> <chart> --namespace <namespace> --values <values-file>",
+        "upgrade_chart": "helm upgrade <release-name> <chart> --namespace <namespace> --values <values-file>",
+        "rollback_release": "helm rollback <release-name> <revision> --namespace <namespace>",
+        "uninstall_chart": "helm uninstall <release-name> --namespace <namespace>"
+      },
+      "repository_management": {
+        "add_repo": "helm repo add <repo-name> <repo-url>",
+        "update_repo": "helm repo update",
+        "list_repos": "helm repo list",
+        "remove_repo": "helm repo remove <repo-name>"
+      },
+      "release_management": {
+        "list_releases": "helm list --all-namespaces",
+        "describe_release": "helm status <release-name> --namespace <namespace>",
+        "get_release_history": "helm history <release-name> --namespace <namespace>",
+        "get_release_manifest": "helm get manifest <release-name> --namespace <namespace>"
+      },
+      "debugging": {
+        "debug_chart_template": "helm template <release-name> <chart> --debug --values <values-file>",
+        "debug_install": "helm install <release-name> <chart> --namespace <namespace> --dry-run --debug",
+        "debug_upgrade": "helm upgrade <release-name> <chart> --namespace <namespace> --dry-run --debug"
+      },
+      "configuration_management": {
+        "get_config": "helm env",
+        "set_config": "helm env <key>=<value>",
+        "list_config_values": "helm env"
+      }
+    }
+  }

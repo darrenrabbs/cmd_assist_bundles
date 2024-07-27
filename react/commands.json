@@ -1,0 +1,10 @@
+{
+    "React Commands": {
+      "Basic Operations": {
+        "Create new app": "npx create-react-app <app-name>",
+        "Start development server": "npm start",
+        "Build production": "npm run build",
+        "Run tests": "npm test"
+      }
+    }
+  }

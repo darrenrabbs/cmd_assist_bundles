@@ -1,0 +1,54 @@
+{
+    "kubectl": {
+      "cluster_management": {
+        "get_cluster_info": "kubectl cluster-info",
+        "get_nodes": "kubectl get nodes",
+        "describe_node": "kubectl describe node <node-name>",
+        "get_pods": "kubectl get pods",
+        "describe_pod": "kubectl describe pod <pod-name>",
+        "get_services": "kubectl get services",
+        "describe_service": "kubectl describe service <service-name>"
+      },
+      "pod_management": {
+        "create_pod": "kubectl run <pod-name> --image=<image-name> --restart=Never",
+        "delete_pod": "kubectl delete pod <pod-name>",
+        "exec_into_pod": "kubectl exec -it <pod-name> -- /bin/bash",
+        "logs_pod": "kubectl logs <pod-name>",
+        "scale_replica_set": "kubectl scale --replicas=<number> rs <replica-set-name>"
+      },
+      "deployment_management": {
+        "create_deployment": "kubectl create deployment <deployment-name> --image=<image-name>",
+        "delete_deployment": "kubectl delete deployment <deployment-name>",
+        "list_deployments": "kubectl get deployments",
+        "describe_deployment": "kubectl describe deployment <deployment-name>",
+        "rollout_status": "kubectl rollout status deployment/<deployment-name>",
+        "rollout_history": "kubectl rollout history deployment/<deployment-name>"
+      },
+      "service_management": {
+        "create_service": "kubectl expose deployment <deployment-name> --type=LoadBalancer --name=<service-name>",
+        "delete_service": "kubectl delete service <service-name>",
+        "get_service_info": "kubectl get service <service-name>",
+        "describe_service": "kubectl describe service <service-name>"
+      },
+      "namespace_management": {
+        "create_namespace": "kubectl create namespace <namespace-name>",
+        "delete_namespace": "kubectl delete namespace <namespace-name>",
+        "list_namespaces": "kubectl get namespaces",
+        "describe_namespace": "kubectl describe namespace <namespace-name>"
+      },
+      "config_management": {
+        "view_config": "kubectl config view",
+        "set_context": "kubectl config use-context <context-name>",
+        "set_cluster": "kubectl config set-cluster <cluster-name> --server=<server-url>",
+        "set_user": "kubectl config set-credentials <user-name> --token=<token>"
+      },
+      "use_cases": {
+        "apply_configuration": "kubectl apply -f <file.yaml>",
+        "delete_resource": "kubectl delete -f <file.yaml>",
+        "get_pods_in_namespace": "kubectl get pods -n <namespace>",
+        "describe_resource": "kubectl describe <resource-type> <resource-name>",
+        "get_all_pods": "kubectl get pods --all-namespaces",
+        "port_forward": "kubectl port-forward <pod-name> <local-port>:<container-port>"
+      }
+    }
+  }

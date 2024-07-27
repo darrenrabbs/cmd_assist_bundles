@@ -1,0 +1,13 @@
+{
+    "AWK": {
+      "Text Processing": {
+        "Print Columns": "awk '{print $1, $3}' <file>",
+        "Filter Rows": "awk '$1 == \"value\"' <file>",
+        "Sum Columns": "awk '{sum += $1} END {print sum}' <file>"
+      },
+      "Pattern Matching": {
+        "Match Pattern": "awk '/pattern/ {print}' <file>",
+        "Count Pattern Occurrences": "awk '/pattern/ {count++} END {print count}' <file>"
+      }
+    }
+  }

@@ -1,0 +1,14 @@
+{
+    "SaltStack Commands": {
+      "Basic Operations": {
+        "List minions": "salt '*' test.ping",
+        "Run command": "salt '*' <module>.<function>",
+        "Apply state": "salt '*' state.apply <state-name>",
+        "Check state": "salt '*' state.show_highstate"
+      },
+      "Configuration": {
+        "Sync modules": "salt-run saltutil.sync_modules",
+        "Sync states": "salt-run saltutil.sync_states"
+      }
+    }
+  }

@@ -1,0 +1,12 @@
+{
+    "SCP Commands": {
+      "File Transfer": {
+        "Copy file to remote": "scp <local-file> <user>@<host>:<remote-path>",
+        "Copy file from remote": "scp <user>@<host>:<remote-file> <local-path>"
+      },
+      "Directory Transfer": {
+        "Copy directory to remote": "scp -r <local-dir> <user>@<host>:<remote-path>",
+        "Copy directory from remote": "scp -r <user>@<host>:<remote-dir> <local-path>"
+      }
+    }
+  }

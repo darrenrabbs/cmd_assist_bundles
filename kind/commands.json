@@ -1,0 +1,48 @@
+{
+    "kind": {
+      "cluster_management": {
+        "create_cluster": "kind create cluster --name <cluster-name>",
+        "delete_cluster": "kind delete cluster --name <cluster-name>",
+        "list_clusters": "kind get clusters",
+        "load_image": "kind load docker-image <image-name>",
+        "export_logs": "kind export logs --name <cluster-name> --output <output-file>"
+      },
+      "cluster_scaling_management": {
+        "add_nodes": "kind create cluster --name <cluster-name> --config <config-file> --nodes <number-of-nodes>",
+        "update_cluster_configuration": "kind create cluster --name <cluster-name> --config <updated-config-file>"
+      },
+      "resource_management": {
+        "check_resource_quotas": "kubectl get resourcequotas --all-namespaces",
+        "describe_resource": "kubectl describe <resource-type> <resource-name>"
+      },
+      "access_security": {
+        "view_configured_contexts": "kubectl config get-contexts",
+        "delete_context": "kubectl config delete-context <context-name>",
+        "list_cluster_roles": "kubectl get clusterroles",
+        "view_role_bindings": "kubectl get rolebindings --all-namespaces"
+      },
+      "helm_integration": {
+        "install_helm_chart": "helm install <release-name> <chart> --namespace <namespace>",
+        "list_helm_releases": "helm list --all-namespaces",
+        "uninstall_helm_release": "helm uninstall <release-name> --namespace <namespace>"
+      },
+      "performance_metrics": {
+        "view_cluster_metrics": "kubectl top nodes\nkubectl top pods --all-namespaces",
+        "check_pod_health": "kubectl get pods --all-namespaces -o jsonpath=\"{.items[*].status.conditions[?(@.type=='Ready')].status}\""
+      },
+      "advanced_debugging": {
+        "port_forward_to_pod": "kubectl port-forward <pod-name> <local-port>:<pod-port>",
+        "execute_command_in_pod": "kubectl exec -it <pod-name> -- /bin/sh",
+        "debug_network_issues": "kubectl exec <pod-name> -- ping <target-ip>"
+      },
+      "resource_cleanup": {
+        "delete_all_resources": "kubectl delete --all <resource-type> --all-namespaces",
+        "clean_up_orphaned_resources": "kubectl delete <resource-type> --all --namespace <namespace>"
+      },
+      "upgrades_maintenance": {
+        "upgrade_cluster": "kind upgrade cluster --name <cluster-name> --image <image>",
+        "backup_cluster_state": "kubectl get all --all-namespaces -o yaml > backup.yaml",
+        "restore_cluster_state": "kubectl apply -f backup.yaml"
+      }
+    }
+  }

@@ -1,0 +1,20 @@
+{
+    "Ansible": {
+      "Setup": {
+        "Check Version": "ansible --version",
+        "List Inventory": "ansible-inventory --list"
+      },
+      "Playbooks": {
+        "Run Playbook": "ansible-playbook <playbook.yml>",
+        "Check Playbook Syntax": "ansible-playbook --syntax-check <playbook.yml>"
+      },
+      "Ad-Hoc Commands": {
+        "Run Command on Host": "ansible <host> -m <module> -a <args>",
+        "Ping Hosts": "ansible <host> -m ping"
+      },
+      "Roles": {
+        "Install Role": "ansible-galaxy install <role>",
+        "Create Role": "ansible-galaxy init <role-name>"
+      }
+    }
+  }
