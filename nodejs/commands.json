@@ -1,15 +1,15 @@
 {
-    "Node.js Commands": {
-      "Basic Operations": {
-        "Check version": "node -v",
-        "Install package": "npm install <package>",
-        "Uninstall package": "npm uninstall <package>",
-        "Run script": "node <script.js>"
+    "node.js": {
+      "basic": {
+        "version": "node -v",
+        "install package": "npm install <package>",
+        "uninstall package": "npm uninstall <package>",
+        "run script": "node <script.js>"
       },
-      "Project Management": {
-        "Initialize project": "npm init",
-        "Install dependencies": "npm install",
-        "Run scripts": "npm run <script>"
+      "project management": {
+        "initialize project": "npm init",
+        "install dependencies": "npm install",
+        "run scripts": "npm run <script>"
       }
     }
   }
