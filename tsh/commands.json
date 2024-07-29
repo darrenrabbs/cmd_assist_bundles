@@ -1,12 +1,12 @@
 {
-    "Tsh Commands": {
-      "Basic Operations": {
+    "tsh": {
+      "basic": {
         "Login": "tsh login <cluster-name>",
         "List nodes": "tsh nodes",
         "Get session": "tsh whoami",
         "Logout": "tsh logout"
       },
-      "Cluster Management": {
+      "cluster management": {
         "List clusters": "tsh clusters",
         "Create cluster": "tsh create cluster <cluster-name>",
         "Delete cluster": "tsh delete cluster <cluster-name>"

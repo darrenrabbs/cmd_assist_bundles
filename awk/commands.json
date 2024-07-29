@@ -1,5 +1,5 @@
 {
-    "AWK": {
+    "awk": {
       "processing": {
         "Print Columns": "awk '{print $1, $3}' <file>",
         "Filter Rows": "awk '$1 == \"value\"' <file>",

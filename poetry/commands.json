@@ -1,48 +1,48 @@
 {
-    "Poetry": {
-      "Project Management": {
-        "Create New Project": "poetry new <project-name>",
-        "Create Project with Specific Layout": "poetry new <project-name> --src",
-        "Show Project Info": "poetry show --tree"
+    "poetry": {
+      "project mgt": {
+        "create new project": "poetry new <project-name>",
+        "create project with specific layout": "poetry new <project-name> --src",
+        "show project info": "poetry show --tree"
       },
-      "Dependency Management": {
-        "Add Dependency": "poetry add <package>",
-        "Add Development Dependency": "poetry add <package> --dev",
-        "Remove Dependency": "poetry remove <package>",
-        "Update Dependencies": "poetry update",
-        "Show Dependencies": "poetry show",
-        "Show Dependency Tree": "poetry show --tree"
+      "dependency management": {
+        "add dependency": "poetry add <package>",
+        "add development dependency": "poetry add <package> --dev",
+        "remove dependency": "poetry remove <package>",
+        "update dependencies": "poetry update",
+        "show dependencies": "poetry show",
+        "show dependency tree": "poetry show --tree"
       },
-      "Lock File Management": {
-        "Generate Lock File": "poetry lock",
-        "Check Lock File for Updates": "poetry lock --check",
-        "Update Lock File": "poetry lock --no-update"
+      "lock file management": {
+        "generate lock file": "poetry lock",
+        "check lock file for updates": "poetry lock --check",
+        "update lock file": "poetry lock --no-update"
       },
-      "Virtual Environment": {
-        "Create Virtual Environment": "poetry env use python",
-        "Activate Virtual Environment": "poetry shell",
-        "Run Command in Virtual Environment": "poetry run <command>",
-        "Show Virtual Environment Path": "poetry env info --path"
+      "virtual environment": {
+        "create virtual environment": "poetry env use python",
+        "activate virtual environment": "poetry shell",
+        "run command in virtual Environment": "poetry run <command>",
+        "show virtual environment path": "poetry env info --path"
       },
-      "Publishing": {
-        "Publish Package": "poetry publish --build",
-        "Publish to Test PyPI": "poetry publish --build --repository testpypi",
-        "Configure Publishing": "poetry config repositories.<repo-name> <url> && poetry config pypi-token.<repo-name> <token>",
-        "Show Publishing Configuration": "poetry config --list"
+      "publishing": {
+        "publish package": "poetry publish --build",
+        "publish to test PyPI": "poetry publish --build --repository testpypi",
+        "configure Publishing": "poetry config repositories.<repo-name> <url> && poetry config pypi-token.<repo-name> <token>",
+        "show publishing configuration": "poetry config --list"
       },
-      "Configuration": {
-        "View Configuration": "poetry config --list",
-        "Set Configuration": "poetry config <key> <value>",
-        "Remove Configuration": "poetry config --unset <key>"
+      "configuration": {
+        "view configuration": "poetry config --list",
+        "set configuration": "poetry config <key> <value>",
+        "remove configuration": "poetry config --unset <key>"
       },
-      "Versioning": {
-        "Show Version": "poetry version",
-        "Set Version": "poetry version <new-version>",
-        "Bump Version": "poetry version <major|minor|patch>"
+      "versioning": {
+        "show version": "poetry version",
+        "set version": "poetry version <new-version>",
+        "bump version": "poetry version <major|minor|patch>"
       },
-      "Building and Packaging": {
-        "Build Package": "poetry build",
-        "Show Build Info": "poetry build --verbose"
+      "building and packaging": {
+        "build package": "poetry build",
+        "show build info": "poetry build --verbose"
       }
     }
   }

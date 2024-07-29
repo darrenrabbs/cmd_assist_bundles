@@ -1,79 +1,79 @@
 {
-    "Git Commands": {
-      "Branch Management": {
-        "List branches": "git branch",
-        "Create a new branch": "git branch <branch-name>",
-        "Switch branches": "git checkout <branch-name>",
-        "Create and switch to a new branch": "git checkout -b <branch-name>",
-        "Rename a branch": "git branch -m <old-name> <new-name>",
-        "Delete a local branch": "git branch -d <branch-name>",
-        "Delete a remote branch": "git push origin --delete <branch-name>",
-        "List remote branches": "git branch -r",
-        "List all branches (local and remote)": "git branch -a"
+    "git": {
+      "branch": {
+        "list": "git branch",
+        "create": "git branch <branch-name>",
+        "switch": "git checkout <branch-name>",
+        "create and switch to a new branch": "git checkout -b <branch-name>",
+        "rename a branch": "git branch -m <old-name> <new-name>",
+        "delete a local branch": "git branch -d <branch-name>",
+        "delete a remote branch": "git push origin --delete <branch-name>",
+        "list remote branches": "git branch -r",
+        "list all branches (local and remote)": "git branch -a"
       },
-      "Commit Management": {
-        "Stage changes": "git add <file-path>",
-        "Commit changes": "git commit -m 'commit message'",
-        "Amend the last commit": "git commit --amend",
-        "Show commit history": "git log",
-        "Show changes between commits": "git diff <commit1> <commit2>",
-        "Revert a commit": "git revert <commit-id>",
-        "Reset to a specific commit (hard reset)": "git reset --hard <commit-id>"
+      "commit": {
+        "stage changes": "git add <file-path>",
+        "commit changes": "git commit -m 'commit message'",
+        "amend the last commit": "git commit --amend",
+        "show commit history": "git log",
+        "show changes between commits": "git diff <commit1> <commit2>",
+        "revert a commit": "git revert <commit-id>",
+        "reset to a specific commit (hard reset)": "git reset --hard <commit-id>"
       },
-      "Merge Conflicts": {
-        "Merge a branch into the current branch": "git merge <branch-name>",
-        "Resolve merge conflicts": "Manually edit conflicted files, then run git add <file-path> and git commit",
-        "Abort a merge": "git merge --abort",
-        "View merge conflicts": "git status"
+      "merge conflicts": {
+        "merge a branch into the current branch": "git merge <branch-name>",
+        "resolve merge conflicts": "Manually edit conflicted files, then run git add <file-path> and git commit",
+        "abort a merge": "git merge --abort",
+        "view merge conflicts": "git status"
       },
-      "Remote Management": {
-        "Add a remote repository": "git remote add origin <remote-url>",
-        "View remote repositories": "git remote -v",
-        "Fetch changes from a remote repository": "git fetch",
-        "Pull changes from a remote repository": "git pull",
-        "Push changes to a remote repository": "git push"
+      "remote management": {
+        "add a remote repository": "git remote add origin <remote-url>",
+        "view remote repositories": "git remote -v",
+        "fetch changes from a remote repository": "git fetch",
+        "pull changes from a remote repository": "git pull",
+        "push changes to a remote repository": "git push"
       },
-      "Tagging": {
-        "List tags": "git tag",
-        "Create a new tag": "git tag <tag-name>",
-        "Delete a tag": "git tag -d <tag-name>",
-        "Push a tag to the remote": "git push origin <tag-name>",
-        "Delete a remote tag": "git push origin --delete <tag-name>"
+      "tagging": {
+        "list tags": "git tag",
+        "create a new tag": "git tag <tag-name>",
+        "delete a tag": "git tag -d <tag-name>",
+        "push a tag to the remote": "git push origin <tag-name>",
+        "delete a remote tag": "git push origin --delete <tag-name>"
       },
-      "Stashing and Cleaning": {
-        "Stash changes": "git stash",
-        "Apply stashed changes": "git stash apply",
-        "List stashed changes": "git stash list",
-        "Drop a stash": "git stash drop <stash@{n}>",
-        "Clear all stashes": "git stash clear",
-        "Clean untracked files": "git clean -f"
+      "stashing": {
+        "stash changes": "git stash",
+        "apply stashed changes": "git stash apply",
+        "list stashed changes": "git stash list",
+        "drop a stash": "git stash drop <stash@{n}>",
+        "clear all stashes": "git stash clear",
+        "clean untracked files": "git clean -f"
       },
-      "Rebasing": {
-        "Rebase the current branch onto another branch": "git rebase <branch-name>",
-        "Continue a rebase after resolving conflicts": "git rebase --continue",
-        "Skip a commit during rebase": "git rebase --skip",
-        "Abort a rebase": "git rebase --abort"
+      "rebasing": {
+        "rebase the current branch onto another branch": "git rebase <branch-name>",
+        "continue a rebase after resolving conflicts": "git rebase --continue",
+        "skip a commit during rebase": "git rebase --skip",
+        "abort a rebase": "git rebase --abort"
       },
-      "Configuration": {
-        "Set a global username": "git config --global user.name 'Your Name'",
-        "Set a global email": "git config --global user.email 'you@example.com'",
-        "View git configuration": "git config --list",
-        "Change the default branch name for new repositories": "git config --global init.defaultBranch <branch-name>"
+      "configuration": {
+        "set a global username": "git config --global user.name 'Your Name'",
+        "set a global email": "git config --global user.email 'you@example.com'",
+        "view git configuration": "git config --list",
+        "change the default branch name for new repositories": "git config --global init.defaultBranch <branch-name>"
       },
-      "Use Cases": {
-        "Summary of Changes": {
+      "use cases": {
+        "summary of changes": {
           "List changed files between branches": "git diff --name-only <feature-branch>..origin/<feature-branch>"
         },
-        "Review": {
-          "Review recent commits": "git log",
-          "Show details of a specific commit": "git show <commit-id>",
-          "Show details of a merge commit": "git show <merge-commit-hash>"
+        "review": {
+          "review recent commits": "git log",
+          "show details of a specific commit": "git show <commit-id>",
+          "show details of a merge commit": "git show <merge-commit-hash>"
         },
-        "Undoing Changes": {
-          "Undo the last commit (soft reset)": "git reset --soft HEAD~1",
-          "Undo the last commit (hard reset)": "git reset --hard HEAD~1",
-          "Unstage changes": "git reset HEAD <file-path>",
-          "Discard changes in working directory": "git checkout -- <file-path>"
+        "undoing changes": {
+          "undo the last commit (soft reset)": "git reset --soft HEAD~1",
+          "undo the last commit (hard reset)": "git reset --hard HEAD~1",
+          "unstage changes": "git reset HEAD <file-path>",
+          "discard changes in working directory": "git checkout -- <file-path>"
         }
       }
     }

@@ -1,19 +1,19 @@
 {
-    "Azure Commands": {
-      "Resource Management": {
-        "List resources": "az resource list",
-        "Create resource group": "az group create --name <resource-group> --location <location>",
-        "Delete resource group": "az group delete --name <resource-group> --yes --no-wait"
+    "azure": {
+      "resources": {
+        "list resources": "az resource list",
+        "create resource group": "az group create --name <resource-group> --location <location>",
+        "delete resource group": "az group delete --name <resource-group> --yes --no-wait"
       },
-      "Virtual Machines": {
-        "List VMs": "az vm list --output table",
-        "Create VM": "az vm create --resource-group <resource-group> --name <vm-name> --image <image>",
-        "Delete VM": "az vm delete --resource-group <resource-group> --name <vm-name> --yes --no-wait"
+      "vms": {
+        "list vms": "az vm list --output table",
+        "create vm": "az vm create --resource-group <resource-group> --name <vm-name> --image <image>",
+        "delete vm": "az vm delete --resource-group <resource-group> --name <vm-name> --yes --no-wait"
       },
-      "Storage": {
-        "List storage accounts": "az storage account list",
-        "Create storage account": "az storage account create --name <account-name> --resource-group <resource-group> --location <location>",
-        "Delete storage account": "az storage account delete --name <account-name> --resource-group <resource-group> --yes --no-wait"
+      "storage": {
+        "list storage accounts": "az storage account list",
+        "create storage account": "az storage account create --name <account-name> --resource-group <resource-group> --location <location>",
+        "delete storage account": "az storage account delete --name <account-name> --resource-group <resource-group> --yes --no-wait"
       }
     }
   }

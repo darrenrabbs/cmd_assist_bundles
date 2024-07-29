@@ -1,21 +1,21 @@
 {
-    "Pulumi": {
-      "Setup": {
-        "New Project": "pulumi new <template>",
-        "Install Dependencies": "pulumi install"
+    "pulumi": {
+      "setup": {
+        "new project": "pulumi new <template>",
+        "install dependencies": "pulumi install"
       },
-      "Deployment": {
-        "Deploy Stack": "pulumi up",
-        "Preview Changes": "pulumi preview",
-        "Destroy Stack": "pulumi destroy"
+      "deployment": {
+        "deploy stack": "pulumi up",S
+        "preview changes": "pulumi preview",
+        "destroy Stack": "pulumi destroy"
       },
-      "Stack Management": {
-        "List Stacks": "pulumi stack ls",
-        "Select Stack": "pulumi stack select <stack-name>"
+      "stack management": {
+        "list stacks": "pulumi stack ls",
+        "select stack": "pulumi stack select <stack-name>"
       },
-      "Configuration": {
-        "Set Config": "pulumi config set <key> <value>",
-        "Get Config": "pulumi config get <key>"
+      "configuration": {
+        "set config": "pulumi config set <key> <value>",
+        "get config": "pulumi config get <key>"
       }
     }
   }

@@ -1,12 +1,12 @@
 {
-    "Tilt Commands": {
-      "Basic Operations": {
+    "tilt": {
+      "basic": {
         "Start Tilt": "tilt up",
         "Stop Tilt": "tilt down",
         "Restart Tilt": "tilt restart",
         "View logs": "tilt logs"
       },
-      "Configuration": {
+      "configuration": {
         "Apply changes": "tilt apply",
         "View status": "tilt status",
         "Debug Tiltfile": "tilt doctor"

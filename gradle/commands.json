@@ -1,20 +1,20 @@
 {
-    "Gradle": {
-      "Build": {
-        "Build Project": "gradle build",
-        "Clean Build": "gradle clean build"
+    "gradle": {
+      "build": {
+        "build project": "gradle build",
+        "clean build": "gradle clean build"
       },
-      "Testing": {
-        "Run Tests": "gradle test",
-        "Test Report": "gradle test --info"
+      "testing": {
+        "run tests": "gradle test",
+        "test report": "gradle test --info"
       },
-      "Dependency Management": {
-        "List Dependencies": "gradle dependencies",
-        "Update Dependencies": "gradle dependencyUpdates"
+      "dependency management": {
+        "list dependencies": "gradle dependencies",
+        "update dependencies": "gradle dependencyUpdates"
       },
-      "Tasks": {
-        "List Tasks": "gradle tasks",
-        "Run Specific Task": "gradle <task-name>"
+      "tasks": {
+        "list tasks": "gradle tasks",
+        "run specific task": "gradle <task-name>"
       }
     }
   }

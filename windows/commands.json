@@ -1,6 +1,6 @@
 {
-    "Windows": {
-      "File Management": {
+    "windows": {
+      "file management": {
         "List Files in Directory": "dir",
         "List Files in Directory (Detailed)": "dir /q",
         "Find Files by Name": "dir /s /b <filename>",
@@ -12,7 +12,7 @@
         "Show Disk Usage": "fsutil volume diskfree C:",
         "Show Disk Space": "wmic logicaldisk get size,freespace,caption"
       },
-      "Text Searching and Manipulation": {
+      "text searching and manipulation": {
         "Find Text in Files": "findstr /s /i /p <pattern> <file>",
         "Find and Replace Text": "powershell -Command \"(Get-Content <file>) -replace '<old>', '<new>' | Set-Content <file>\"",
         "Count Occurrences of a Pattern": "findstr /r /c:\"<pattern>\" <file> | find /c /v \"\"",
@@ -22,7 +22,7 @@
         "Display Last N Lines of a File": "powershell -Command \"Get-Content <file> | Select-Object -Last <number>\"",
         "View File in Pages": "more <file>"
       },
-      "System Information": {
+      "system information": {
         "Show System Info": "systeminfo",
         "Show IP Configuration": "ipconfig",
         "Show Network Statistics": "netstat",
@@ -30,18 +30,18 @@
         "Show Memory Usage": "wmic os get freephysicalmemory,TotalVisibleMemorySize",
         "Show Active Network Connections": "netstat -a"
       },
-      "Networking": {
+      "networking": {
         "Ping a Host": "ping <host>",
         "Trace Route to a Host": "tracert <host>",
         "Check Open Ports": "netstat -an | findstr <port>",
         "Download File from URL": "powershell -Command \"Invoke-WebRequest -Uri <url> -OutFile <file>\"",
         "Fetch Headers from URL": "powershell -Command \"Invoke-WebRequest -Uri <url> -Method Head\""
       },
-      "Archiving and Compression": {
+      "archiving and compression": {
         "Create a Zip Archive": "powershell -Command \"Compress-Archive -Path <files> -DestinationPath <archive.zip>\"",
         "Extract a Zip Archive": "powershell -Command \"Expand-Archive -Path <archive.zip> -DestinationPath <directory>\""
       },
-      "PowerShell Specific": {
+      "powerShell specific": {
         "List Installed Programs": "Get-WmiObject -Class Win32_Product",
         "Get Disk Space on a Drive": "Get-PSDrive -PSProvider FileSystem",
         "List Services": "Get-Service",
