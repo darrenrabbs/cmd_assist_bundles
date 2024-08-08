@@ -1,6 +1,6 @@
-# cmd_stash_bundles
+# cmd_assist_bundles
 
-cmd_stash_bundles is a repository of curated command bundles designed to enhance your command-line productivity. This repository contains ready-to-use command sets for various technologies, making it easy to manage and deploy commonly used commands in your projects.
+cmd_assist_bundles is a repository of curated command bundles designed to enhance your command-line productivity. This repository contains ready-to-use command sets for various technologies, making it easy to manage and deploy commonly used commands in your projects.
 
 ## Features
 
@@ -19,13 +19,15 @@ Ensure you have the cmd_stash CLI tool installed and set up in your environment.
 To fetch a command bundle, use the cmd_stash CLI tool with the fetch command:
 
 ```bash
-cmd_stash fetch <bundle-name>
+cmd_assist fetch <bundle-name>
+ca fetch <bundle-name>
 ```
 
 Replace `<bundle-name>` with the name of the bundle you want to fetch. For example, to fetch the bundle for curl, use:
 
 ```bash
-cmd_stash fetch curl
+cmd_assist fetch curl
+ca fetch curl
 ```
 
 This command will download the specified bundle and import it into your cmd_stash configuration.
@@ -41,7 +43,7 @@ Command bundles are organized by technology and stored in the `bundles` director
 ### Example Directory Structure
 
 ```markdown
-cmd_stash_bundles/
+cmd_assist_bundles/
 │
 ├── git/
 │   └── commands.json
